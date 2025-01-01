@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "modulox:shadowinium_block"
+    }
+  ],
+  "result": {
+    "id": "modulox:shadowinium_ingot",
+    "count": 9
+  }
+}

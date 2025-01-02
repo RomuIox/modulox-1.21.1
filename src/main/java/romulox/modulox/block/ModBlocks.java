@@ -16,11 +16,15 @@ public class ModBlocks {
 
     // Shadowinium Block
     public static final Block SHADOWINIUM_BLOCK = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "shadowinium_block"),
-            new Block(AbstractBlock.Settings.create().requiresTool().strength(2f).sounds(BlockSoundGroup.HEAVY_CORE)));
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(3f).sounds(BlockSoundGroup.HEAVY_CORE)));
     public static final Item SHADOWINIUM_BLOCK_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "shadowinium_block"),
             new BlockItem(SHADOWINIUM_BLOCK, new Item.Settings()));
 
     // Shadowinium Ore
+    public static final Block SHADOWINIUM_ORE = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "shadowinium_ore"),
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(3f).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Item SHADOWINIUM_ORE_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "shadowinium_ore"),
+            new BlockItem(SHADOWINIUM_ORE, new Item.Settings()));
 
     // Blockjack
     public static final Block BLOCKJACK = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "blockjack"),
@@ -34,6 +38,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(SHADOWINIUM_BLOCK);
             entries.add(BLOCKJACK);
+            entries.add(SHADOWINIUM_ORE);
         });
     }
 }

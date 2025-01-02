@@ -3,5 +3,8 @@
   "item.modulox.obsidian_ingot": "Obsidian Ingot",
   "item.modulox.shadowinium_ingot": "Shadowinium Ingot",
   "block.modulox.shadowinium_block": "Block of Shadowinium",
-  "block.modulox.blockjack": "Blockjack"
+  "block.modulox.blockjack": "Blockjack",
+  "item.modulox.dollar": "Dollar",
+  "item.modulox.coin": "Coin",
+  "block.modulox.shadowinium_ore": "Shadowinium Ore"
 }

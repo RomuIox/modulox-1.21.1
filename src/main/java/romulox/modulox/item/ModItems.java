@@ -16,8 +16,13 @@ public class ModItems {
                     .food(new FoodComponent.Builder().alwaysEdible().nutrition(1).snack().build())
     ));
 
-    // Candy
+    // Dollar
     public static final Item DOLLAR = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "dollar"), new Item(
+            new Item.Settings()
+    ));
+
+    // Coin
+    public static final Item COIN = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "coin"), new Item(
             new Item.Settings()
     ));
 
@@ -92,6 +97,7 @@ public class ModItems {
             entries.add(OBSIDIAN_INGOT);
             entries.add(SHADOWINIUM_INGOT);
             entries.add(DOLLAR);
+            entries.add(COIN);
         });
     }
 }

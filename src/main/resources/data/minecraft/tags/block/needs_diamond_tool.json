@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "modulox:shadowinium_block"
+    "modulox:shadowinium_block",
+    "modulox:shadowinium_ore"
   ]
 }

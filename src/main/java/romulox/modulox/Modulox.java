@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import romulox.modulox.block.ModBlocks;
 import romulox.modulox.item.CandyItem;
 import romulox.modulox.item.ModItems;
+import romulox.modulox.itemgroup.ModItemGroups;
 import romulox.modulox.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import romulox.modulox.util.ModTags;
 
 public class Modulox implements ModInitializer {
 	public static final String MOD_ID = "modulox";
@@ -27,9 +29,11 @@ public class Modulox implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Hello world!");
 
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems(); // Registers the modded items class so modded items are created
 		ModBlocks.registerModBlocks(); // Registers the modded blocks class so modded items are created
 		ModSounds.registerSounds(); // Registers the modded sounds class so modded sounds are created
+		ModTags.registerModTags();
 
 		// Event Handler checks every tick upon joining world
 		ClientTickEvents.START_WORLD_TICK.register(client -> {

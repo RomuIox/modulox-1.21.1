@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import romulox.modulox.Modulox;
+import romulox.modulox.util.ModTags;
 
 public class ModBlocks {
 
@@ -32,13 +33,18 @@ public class ModBlocks {
     public static final Item BLOCKJACK_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "blockjack"),
             new BlockItem(BLOCKJACK, new Item.Settings()));
 
+    // Bloodstone
+    public static final Block BLOODSTONE = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "bloodstone"),
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(5f).sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+    public static final Item BLOODSTONE_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "bloodstone"),
+            new BlockItem(BLOODSTONE, new Item.Settings()));
+
+    public static final Block PAINTABLE_BLOCK = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "paintable_block"),
+            new PaintableBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)));
+    public static final Item PAINTABLE_BLOCK_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "paintable_block"),
+            new BlockItem(PAINTABLE_BLOCK, new Item.Settings()));
+
     public static void registerModBlocks() {
         Modulox.LOGGER.info("Registering Mod Blocks for" + Modulox.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(SHADOWINIUM_BLOCK);
-            entries.add(BLOCKJACK);
-            entries.add(SHADOWINIUM_ORE);
-        });
     }
 }

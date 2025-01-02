@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "modulox:shadowinium_block"
+    "#modulox:needs_netherite_tool"
   ]
 }

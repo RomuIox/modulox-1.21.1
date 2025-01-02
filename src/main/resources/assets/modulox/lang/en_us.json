@@ -1,10 +1,22 @@
 {
+  "itemgroup.modulox.modulox_items": "Modulox Items",
   "item.modulox.candy": "Candy",
   "item.modulox.obsidian_ingot": "Obsidian Ingot",
   "item.modulox.shadowinium_ingot": "Shadowinium Ingot",
-  "block.modulox.shadowinium_block": "Block of Shadowinium",
-  "block.modulox.blockjack": "Blockjack",
   "item.modulox.dollar": "Dollar",
   "item.modulox.coin": "Coin",
-  "block.modulox.shadowinium_ore": "Shadowinium Ore"
+  "item.modulox.copper_sword": "Copper Sword",
+  "item.modulox.copper_pickaxe": "Copper Pickaxe",
+  "item.modulox.copper_axe": "Copper Axe",
+  "item.modulox.copper_shovel": "Copper Shovel",
+  "item.modulox.copper_hoe": "Copper Hoe",
+  "item.modulox.bloodstone_sword": "Bloodstone Sword",
+  "item.modulox.bloodstone_pickaxe": "Bloodstone Pickaxe",
+  "item.modulox.bloodstone_axe": "Bloodstone Axe",
+  "item.modulox.bloodstone_shovel": "Bloodstone Shovel",
+  "item.modulox.bloodstone_hoe": "Bloodstone Hoe",
+  "block.modulox.shadowinium_ore": "Shadowinium Ore",
+  "block.modulox.shadowinium_block": "Block of Shadowinium",
+  "block.modulox.blockjack": "Blockjack",
+  "block.modulox.paintable_block": "Paintable Block"
 }

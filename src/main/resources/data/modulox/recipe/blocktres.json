@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CWC",
+    "WBW",
+    "CWC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:chicken"
+    },
+    "B": {
+      "item": "minecraft:black_wool"
+    },
+    "W": {
+      "item": "minecraft:melon_slice"
+    }
+  },
+  "result": {
+    "id": "modulox:blocktres",
+    "count": 9
+  }
+}

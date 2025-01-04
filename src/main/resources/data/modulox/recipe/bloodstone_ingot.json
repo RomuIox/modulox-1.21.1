@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S  ",
+    "MI ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "modulox:shaper_concept_item"
+    },
+    "M": {
+      "item": "modulox:molten_bloodstone"
+    },
+    "I": {
+      "item": "modulox:ingot_container"
+    }
+  },
+  "result": {
+    "id": "modulox:bloodstone_ingot",
+    "count": 1
+  }
+}

@@ -1,8 +1,10 @@
 package romulox.modulox.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -33,6 +35,12 @@ public class ModBlocks {
     public static final Item BLOCKJACK_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "blockjack"),
             new BlockItem(BLOCKJACK, new Item.Settings()));
 
+    // Blocktres
+    public static final Block BLOCKTRES = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "blocktres"),
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL)));
+    public static final Item BLOCKTRES_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "blocktres"),
+            new BlockItem(BLOCKTRES, new Item.Settings()));
+
     // Bloodstone
     public static final Block BLOODSTONE = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "bloodstone"),
             new Block(AbstractBlock.Settings.create().requiresTool().strength(5f).sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
@@ -40,7 +48,7 @@ public class ModBlocks {
             new BlockItem(BLOODSTONE, new Item.Settings()));
 
     public static final Block PAINTABLE_BLOCK = Registry.register(Registries.BLOCK, Identifier.of(Modulox.MOD_ID, "paintable_block"),
-            new PaintableBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)));
+            new PaintableBlock(AbstractBlock.Settings.create().requiresTool().sounds(BlockSoundGroup.STONE), 0, 0, 0));
     public static final Item PAINTABLE_BLOCK_ITEM = Registry.register(Registries.ITEM, Identifier.of(Modulox.MOD_ID, "paintable_block"),
             new BlockItem(PAINTABLE_BLOCK, new Item.Settings()));
 

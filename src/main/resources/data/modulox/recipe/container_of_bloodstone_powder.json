@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "modulox:bloodstone_powder"
+    },
+    "C": {
+      "item": "modulox:powder_container"
+    }
+  },
+  "result": {
+    "id": "modulox:bloodstone_powder_container",
+    "count": 1
+  }
+}

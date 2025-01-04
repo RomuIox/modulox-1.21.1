@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "T P",
+    " B ",
+    "H  "
+  ],
+  "key": {
+    "P": {
+      "item": "modulox:pickaxe_head"
+    },
+    "B": {
+      "item": "modulox:binding"
+    },
+    "H": {
+      "item": "modulox:handle"
+    },
+    "T": {
+      "item": "modulox:tinker_table_concept_item"
+    }
+  },
+  "result": {
+    "id": "modulox:pickaxe_item",
+    "count": 1
+  }
+}

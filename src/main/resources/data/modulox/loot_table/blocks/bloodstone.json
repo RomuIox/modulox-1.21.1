@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "modulox:bloodstone"
+          "name": "modulox:bloodstone_powder"
         }
       ]
     }

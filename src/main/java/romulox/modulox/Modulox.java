@@ -3,8 +3,12 @@ package romulox.modulox;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.player.PlayerEntity;
 import romulox.modulox.block.ModBlocks;
+import romulox.modulox.component.ModDataComponentTypes;
 import romulox.modulox.item.CandyItem;
+import romulox.modulox.item.KnifeItem;
 import romulox.modulox.item.ModItems;
 import romulox.modulox.itemgroup.ModItemGroups;
 import romulox.modulox.sound.ModSounds;
@@ -21,6 +25,7 @@ public class Modulox implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static boolean alreadyChecked = false;
+	public static boolean knifeAlreadyChecked = false;
 
 	@Override
 	public void onInitialize() {
@@ -34,10 +39,12 @@ public class Modulox implements ModInitializer {
 		ModBlocks.registerModBlocks(); // Registers the modded blocks class so modded items are created
 		ModSounds.registerSounds(); // Registers the modded sounds class so modded sounds are created
 		ModTags.registerModTags();
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		// Event Handler checks every tick upon joining world
 		ClientTickEvents.START_WORLD_TICK.register(client -> {
 			CandyItem.onPlayerTick(alreadyChecked); // Check if player is holding Candy
+			KnifeItem.whileInHand(knifeAlreadyChecked);
 		});
 	}
 }

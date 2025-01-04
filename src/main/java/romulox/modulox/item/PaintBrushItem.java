@@ -4,25 +4,22 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class PaintBrushItem extends Item {
     public PaintBrushItem(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        System.out.println("Used");
-        return TypedActionResult.pass(user.getStackInHand(hand));
-    }
-
-    @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
-        System.out.println("Used on block");
-        return ActionResult.success(true);
     }
 }

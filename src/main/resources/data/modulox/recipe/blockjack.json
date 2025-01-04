@@ -3,19 +3,19 @@
   "category": "misc",
   "pattern": [
     " W ",
-    "WFW",
+    "WLW",
     " W "
   ],
   "key": {
     "W": {
       "tag": "minecraft:wool"
     },
-    "F": {
-      "item": "minecraft:rotten_flesh"
+    "L": {
+      "item": "minecraft:leather"
     }
   },
   "result": {
-    "id": "modulox:blocktres",
+    "id": "modulox:blockjack",
     "count": 4
   }
 }

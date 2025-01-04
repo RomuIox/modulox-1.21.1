@@ -6,6 +6,7 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import romulox.modulox.block.ModBlocks;
 import romulox.modulox.util.ModTags;
@@ -14,6 +15,7 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
+    NETHERRACK(BlockTags.INCORRECT_FOR_STONE_TOOL, 98, 4.0F, 1.0F, 5, () -> Ingredient.ofItems(Items.NETHERRACK.asItem())),
     COPPER(BlockTags.INCORRECT_FOR_STONE_TOOL, 100, 8.0F, 1.0F, 5, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     BLOODSTONE(ModTags.Blocks.INCORRECT_FOR_BLOODSTONE_TOOL, 3004, 12.0F, 7.0F, 20, () -> Ingredient.ofItems(ModBlocks.BLOODSTONE.asItem()));
 

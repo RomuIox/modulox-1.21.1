@@ -55,12 +55,29 @@ public class ModItems {
     // Obsidian Ingot
     public static final Item OBSIDIAN_INGOT = item("obsidian_ingot");
 
+    // Netherrack Tier
+    public static final Item NETHERRACK_SWORD = swordItem(ModToolMaterials.NETHERRACK);
+    public static final Item NETHERRACK_PICKAXE = pickaxeItem(ModToolMaterials.NETHERRACK);
+    public static final Item NETHERRACK_AXE = axeItem(ModToolMaterials.NETHERRACK);
+    public static final Item NETHERRACK_SHOVEL = shovelItem(ModToolMaterials.NETHERRACK);
+    public static final Item NETHERRACK_HOE = hoeItem(ModToolMaterials.NETHERRACK);
+
     // Copper Equipment
     public static final Item COPPER_SWORD = swordItem(ModToolMaterials.COPPER);
     public static final Item COPPER_PICKAXE = pickaxeItem(ModToolMaterials.COPPER);
     public static final Item COPPER_AXE = axeItem(ModToolMaterials.COPPER);
     public static final Item COPPER_SHOVEL = shovelItem(ModToolMaterials.COPPER);
     public static final Item COPPER_HOE = hoeItem(ModToolMaterials.COPPER);
+
+    public static Item COPPER_HELMET = basicHelmetItem("copper_helmet",
+            ModArmorMaterials.COPPER_ARMOR_MATERIAL, 7);
+    public static Item COPPER_CHESTPLATE = basicChestplateItem("copper_chestplate",
+            ModArmorMaterials.COPPER_ARMOR_MATERIAL, 7);
+    public static Item COPPER_LEGGINGS = basicLeggingsItem("copper_leggings",
+            ModArmorMaterials.COPPER_ARMOR_MATERIAL, 7);
+    public static Item COPPER_BOOTS = basicBootsItem("copper_boots",
+            ModArmorMaterials.COPPER_ARMOR_MATERIAL, 7);
+    //
 
     // Bloodstone Tier
     public static final Item BLOODSTONE_POWDER = item("bloodstone_powder");
@@ -83,13 +100,6 @@ public class ModItems {
     public static Item BLOODSTONE_BOOTS = basicBootsItem("bloodstone_boots",
             ModArmorMaterials.BLOODSTONE_ARMOR_MATERIAL, 40);
     //
-
-    // Netherrack Tier
-    public static final Item NETHERRACK_SWORD = swordItem(ModToolMaterials.NETHERRACK);
-    public static final Item NETHERRACK_PICKAXE = pickaxeItem(ModToolMaterials.NETHERRACK);
-    public static final Item NETHERRACK_AXE = axeItem(ModToolMaterials.NETHERRACK);
-    public static final Item NETHERRACK_SHOVEL = shovelItem(ModToolMaterials.NETHERRACK);
-    public static final Item NETHERRACK_HOE = hoeItem(ModToolMaterials.NETHERRACK);
 
     /* Shadowinium Ingot
      * I want this item to increase the Player movement speed while in hand.

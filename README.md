@@ -3,7 +3,7 @@ I am going to be writing tutorials that will be posted in the channel. Stay tune
 <hr>
 
 # What is currently implemented:
-- Copper Toolset
+- Copper Toolset & Armorset
 - Netherrack Toolset
 - Blockjack
 - Blocktres

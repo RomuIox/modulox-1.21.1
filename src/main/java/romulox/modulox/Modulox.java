@@ -15,6 +15,7 @@ import romulox.modulox.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import romulox.modulox.util.ModTags;
+import romulox.modulox.world.gen.ModWorldGeneration;
 
 public class Modulox implements ModInitializer {
 	public static final String MOD_ID = "modulox";
@@ -40,6 +41,8 @@ public class Modulox implements ModInitializer {
 		ModSounds.registerSounds(); // Registers the modded sounds class so modded sounds are created
 		ModTags.registerModTags();
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		// Event Handler checks every tick upon joining world
 		ClientTickEvents.START_WORLD_TICK.register(client -> {

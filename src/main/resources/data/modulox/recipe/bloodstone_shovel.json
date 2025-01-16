@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " B ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "modulox:bloodstone_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "modulox:bloodstone_shovel",
+    "count": 1
+  }
+}

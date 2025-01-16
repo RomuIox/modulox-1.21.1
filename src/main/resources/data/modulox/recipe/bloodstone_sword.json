@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " B ",
+    " B ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "modulox:bloodstone_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "modulox:bloodstone_sword",
+    "count": 1
+  }
+}

@@ -1,24 +1,10 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "pattern": [
-    "S  ",
-    "MI ",
-    "   "
-  ],
-  "key": {
-    "S": {
-      "item": "modulox:shaper_concept_item"
-    },
-    "M": {
-      "item": "modulox:molten_bloodstone"
-    },
-    "I": {
-      "item": "modulox:ingot_container"
-    }
+  "cookingtime": 200,
+  "experience": 2,
+  "ingredient": {
+    "item": "modulox:bloodstone"
   },
-  "result": {
-    "id": "modulox:bloodstone_ingot",
-    "count": 1
-  }
+  "result": "modulox:bloodstone_ingot"
 }
